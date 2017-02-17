@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<head>
+	<title>TriMet ROOT</title>
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1" />
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="robots" content="NOODP" />
+	
+	<link rel="icon" href="img/favicon.ico">
+	<link rel="shortcut icon" href="img/favicon.png">
+	
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic|Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+	<link rel="stylesheet" href="css/print.css" type="text/css" media="print">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	  // Add smooth scrolling to all links
+	  $("a.nav_link ").on('click', function(event) {
+		// Make sure this.hash has a value before overriding default behavior
+		if (this.hash !== "") {
+		  // Prevent default anchor click behavior
+		  event.preventDefault();
+		  // Store hash
+		  var hash = this.hash;
+		  // Using jQuery's animate() method to add smooth page scroll
+		  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		  $('html, body').animate({
+			scrollTop: $(hash).offset().top
+		  }, 800, function(){
+	   
+			// Add hash (#) to URL when done scrolling (default click behavior)
+			window.location.hash = hash;
+		  });
+		} // End if
+	  });
+	});
+	</script>
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<script src='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.js'></script>
+	<link href='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.css' rel='stylesheet' />
+</head>
+
+<body id="top">
+	<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.2.0/leaflet-omnivore.min.js'></script>
+	<nav class="mast" role="navigation">
+		<div class="mast-wrapper">
+			<div class="logo">
+				<a href="http://www.trimet.org"><img src="img/index.svg" width="185" height="42" class="mast-logo"></a>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="standardheader">
+		<p class="breadcrumb"><a href="http://www.trimet.org">Home</a> : <a href="index.html">TriMet ROOT</a></p>
+		<h1>TriMet Rail Operations Optimization Technology (ROOT)</h1>
+		
+		<div class="first">
+			<p>Rail Operations Optimization Technology, or ROOT, will use the Internet of Things and Big Data Analytics to optimize rail operations at TriMet. This dashboard provides a snapshot of ROOT&rsquo;s progress. These key indicators help us track progress toward project deliverables and the budget.</p>
+		</div>
+	</div>
+
+	<div class="section">
+		<p>More information about ROOT can be found by clicking the About ROOT button below. Information about the project&rsquo;s current status can be found on this dashboard.</p>
+	</div>
+
+	<div class="section">
+		<ul class="anchor tight">
+			<li><a href="about.html">About ROOT</a></li>
+			<li><a href="#architecture" class="nav_link">ROOT Architecture</a></li>
+			<li><a href="#market" class="nav_link">Market Interest Assessment and Vendor Capabilities</a></li>
+			<li><a href="#proposals" class="nav_link">Unsolicited Proposals</a></li>
+			<li><a href="#schedule" class="nav_link">Schedule</a></li>
+			<li><a href="#budget" class="nav_link">Budget</a></li>
+		</ul>
+	</div>
+
+	<div class="section headerbar" id="architecture">
+		<h2 class="strata">ROOT Architecture</h2>
+	</div>
+	
+	<div class="section">
+		<div class="chart-container">
+			<div class="half-chart">
+				<p class="concept-text">The ROOT Architecture is outlined below:</p>
+				<ol>
+					<p style="margin-top:10px;margin-bottom:10px;color:#d1441e;">On-Board</p>
+					<li><span>Internet of Things Gateway</span></li>
+					<li><span>Alarms & Monitors</span></li>
+					<li><span>Legacy Systems</span></li>
+					<p style="margin-top:10px;margin-bottom:10px;color:#d1441e;">Back-office</p>
+					<li><span>Data backhaul over cellular</span></li>
+					<li><span>Big Data Analytics Tools</span></li>
+					<p style="margin-top:10px;margin-bottom:10px;color:#d1441e;">Implementation</p>
+					<li><span>System Integration</span></li>
+				</ol>
+			</div>
+			<div class="half-chart"><img class="diagram" src="img/concept-diagram.png"></div>
+		</div>
+		<p class="top"><a href="#top" class="nav_link">Top</a></p>
+	</div>
+	
+	<div class="section headerbar" id="market">
+		<h2 class="strata">Market Interest Assessment and Vendor Capabilities</h2>
+	</div>
+
+	<div class="section">
+		<p>We have met with and spoken to multiple different companies regarding the project to assess market interest and vendor capabilities.</p>
+		<br>
+		<p>These are the companies that we have met with thus far:</p>
+		<div class="company-container">
+			<div class="companies"><a href="http://www.lileesystems.com/"><img src="img/lilee-logo.png" alt="Lilee Systems"></a></div>
+			<div class="companies"><a href="http://www.snclavalin.com/en/"><img src="img/snc-logo.png"></a></div>
+			<div class="companies"><a href="http://www.zf.com/corporate/en_de/homepage/homepage.html"><img src="img/zf-logo.png"></a></div>
+			<div class="companies"><a href="http://www.kontron.com/"><img src="img/kontron-logo.jpg"></a></div>
+			<div class="companies"><a href="http://www.intel.com/content/www/us/en/internet-of-things/overview.html"><img src="img/intel-logo.png"></a></div>
+			<div class="companies"><a href="https://www.windriver.com/"><img src="img/wind-logo.png"></a></div>
+			<div class="companies"><a href="http://volteo.com/"><img src="img/volteo-logo.jpg"></a></div>
+			<div class="companies"><a href="http://www.usa.siemens.com/ingenuity-for-life/"><img src="img/siemens-logo.jpg"></a></div>
+			<div class="companies"><a href="http://www.presidio.com/"><img src="img/presidio-logo.jpg"></a></div>
+			<div class="companies"><a href="https://tfl.gov.uk/modes/dlr/"><img src="img/dlr-logo.jpg"></a></div>
+		</div>
+		<p class="top"><a href="#top" class="nav_link">Top</a></p>
+	</div>
+	
+	<div class="section headerbar" id="proposals">
+		<h2 class="strata">Unsolicited Proposals</h2>
+	</div>
+
+	<div class="section">
+		<p>In addition, we have received multiple unsolicited proposals and are currently in the process of reviewing them. It is unlikely, however, that we will accept any of them for the main scope.</p>
+		<br>
+		<p>These are the companies from whom we have received unsolicited proposals:</p>
+		
+		<div class="company-container">
+			<div class="companies"><a href="http://www.lileesystems.com/"><img src="img/lilee-logo.png" alt="Lilee Systems"></a></div>
+			<div class="companies"><a href="http://www.snclavalin.com/en/"><img src="img/snc-logo.png"></a></div>
+			<div class="companies"><a href="http://volteo.com/"><img src="img/volteo-logo.jpg"></a></div>
+		</div>
+		<p class="top"><a href="#top" class="nav_link">Top</a></p>
+	</div>
+
+	<div class="section headerbar" id="schedule">
+		<h2 class="strata">Schedule</h2>
+	</div>
+	
+	<div class="section">
+		<p>We anticipate publishing the ROOT RFP for Scope of Work by the end if April with a July 1<span class="superscript">st</span> deadline for proposals and a September 2017 awarding of the contract. The full schedule is outlined in the chart below:</p>
+		<div class="chart-container">
+			<div class="full-chart">
+				<!-- <script src="./js/gantt.js"></script> -->
+				<embed class="full-chart" src="https://plot.ly/~mosteele/35.embed?autosize=True&link=false&modebar=false&logo=false">
+			</div>
+		</div>
+		<p class="top"><a href="#top" class="nav_link">Top</a></p>
+	</div>
+
+	<div class="section headerbar" id="budget">
+		<h2 class="strata">Budget</h2>
+	</div>
+	
+	<div class="section">
+		<div class="chart-container">
+			<div class="full-chart">
+				<embed class="full-chart" src="https://plot.ly/~mosteele/23.embed?autosize=True&link=false&modebar=false&logo=false">
+			</div>
+		</div>
+	
+		<p class="top"><a href="#top" class="nav_link">Top</a></p>
+	</div>
+	
+	<div class="section">
+		<div class="footer">
+			<div class="footer-left">
+				<div style="padding: 30px 30px 5px 30px;">
+					<a href="/">
+						<i class="icon icon-slogan icon-trimet-logo-slogan"></i>
+					</a>
+				</div>
+				
+				<div class="footer-bottom">
+					&copy; 2017 TriMet
+					 &bull;
+					<a href="http://trimet.org/legal/index.htm">Terms of Use</a>
+					 &bull;
+					<a href="http://trimet.org/legal/privacy.htm">Privacy Policy</a>
+					 &bull;
+					<a href="http://trimet.org/about/index.htm">About Us</a>
+					 &bull;
+					<a href="http://trimet.org/contact/index.htm">Customer Service</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<head>
+	<title>TriMet ROOT - About</title>
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1" />
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="robots" content="NOODP" />
+	
+	<link rel="icon" href="img/favicon.ico">
+	<link rel="shortcut icon" href="img/favicon.png">
+	
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic|Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+	<link rel="stylesheet" href="css/print.css" type="text/css" media="print">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	  // Add smooth scrolling to all links
+	  $("a.nav_link ").on('click', function(event) {
+		// Make sure this.hash has a value before overriding default behavior
+		if (this.hash !== "") {
+		  // Prevent default anchor click behavior
+		  event.preventDefault();
+		  // Store hash
+		  var hash = this.hash;
+		  // Using jQuery's animate() method to add smooth page scroll
+		  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		  $('html, body').animate({
+			scrollTop: $(hash).offset().top
+		  }, 800, function(){
+	   
+			// Add hash (#) to URL when done scrolling (default click behavior)
+			window.location.hash = hash;
+		  });
+		} // End if
+	  });
+	});
+	</script>
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<script src='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.js'></script>
+	<link href='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.css' rel='stylesheet' />
+</head>
+
+<body id="top">
+	<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.2.0/leaflet-omnivore.min.js'></script>
+	<nav class="mast" role="navigation">
+		<div class="mast-wrapper">
+			<div class="logo">
+				<a href="http://www.trimet.org"><img src="img/index.svg" width="185" height="42" class="mast-logo"></a>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="standardheader">
+		<p class="breadcrumb"><a href="http://www.trimet.org">Home</a> : <a href="index.html">TriMet ROOT</a> : <a href="about.html">About ROOT</a></p>
+		<h1>TriMet Rail Operations Optimization Technology (ROOT)</h1>
+		
+		<div class="first">
+			<p>Rail Operations Optimization Technology, or ROOT, will use the Internet of Things and Big Data Analytics to optimize rail operations at TriMet. This page serves as a concept overview of ROOT.</p>
+		</div>
+	</div>
+
+	<div class="section">
+		<p>Click the buttons below to learn more about ROOT&rsquo;s impact on the core areas of safety and security, maintenance and on-time performance. In addition, ROOT can serve as a gateway for expanding customer information, transit signal priority and infotainment.</p>
+	</div>
+
+	<div class="section">
+		<ul class="anchor tight">
+			<li><a href="index.html">Return to the Dashboard</a></li>
+			<li><a href="#concept" class="nav_link">Concept Overview</a></li>
+			<li><a href="#safety" class="nav_link">Safety and Security</a></li>
+			<li><a href="#maintenance" class="nav_link">Maintenance</a></li>
+			<li><a href="#performance" class="nav_link">On-Time Performance</a></li>
+			<li><a href="#customer" class="nav_link">Customer Information</a></li>
+			<li><a href="#transit" class="nav_link">Transit Signal Priority</a></li>
+			<li><a href="#infotainment" class="nav_link">Infotainment</a></li>
+		</ul>
+	</div>
+
+	<div class="section headerbar" id="concept">
+		<h2 class="strata">Concept Overview</h2>
+	</div>
+	
+	<div class="section">
+		<div class="chart-container">
+			<div class="half-chart">
+				<p class="concept-text">ROOT offers six main categories of functionality:</p>
+				<ol>
+					<li><span>Safety and Security</span></li>
+					<li><span>Maintenance</span></li>
+					<li><span>On-Time Performance</span></li>
+					<li><span>Customer Information</span></li>
+					<li><span>Transit Signal Priority</span></li>
+					<li><span>Infotainment</span></li>
+				</ol>
+			</div>
+			<div class="half-chart"><img class="diagram" src="img/concept-diagram.png"></div>
+		</div>
+		<p class="top"><a href="#top" class="nav_link">Top</a></p>
+	</div>
+
+	<div class="section headerbar" id="safety">
+		<h2 class="strata">Safety and Security</h2>
+	</div>	
+
+	<div class="section">
+		<div class="chart-container">
+			<div class="half-chart">
+				<p class="concept-text" style="color: #d1441e">Problem Statement</p>
+				<br>
+				<p class="concept-text"><span style="font-weight: 800">Safety</span>: Interaction between LRT and Heavy Rail, train automation and network expansion have all increased Wayside Rail Worker Safety (WRWS) issues.</p>
+				<br>
+				<p class="concept-text"><span style="font-weight: 800">Security</span>: Current state provides insufficient situational awareness of potential security situations on bus. Unable to provide relevant real-time visibility to security, police, or emergency responders.</p>
+				<br><br>
+				<p class="concept-text" style="color: #d1441e">Description</p>
+				<br>
+				<p class="concept-text">The ROOT concept architecture supports interfaces with 3rd party WRWS systems and with on-board CCTV cameras with on-demand streaming and distribution capability. Access to streaming CCTV video feeds will improve the response capability of police or emergency responders to safety and security incidents on the vehicle.</p>
+				<br><br>
+				<p class="concept-text" style="color: #d1441e">Alternatives</p>
+				<br>
+				<p>&bull;&nbsp;Do nothing</p>
+				<p>&bull;&nbsp;One-off proprietary system procurements</p>
+				<p>&bull;&nbsp;ROOT project</p>
+
+			</div>
+			<div class="half-chart"><img class="diagram" src="img/safety-diagram.jpg"></div>
+		</div>
+		<p class="top"><a href="#top" class="nav_link">Top</a></p>
+	</div>
+
+	<div class="section headerbar" id="maintenance">
+		<h2 class="strata">Maintenance</h2>
+	</div>	
+	
+	<div class="section">
+		<div class="chart-container">
+			<div class="half-chart">
+				<p class="concept-text" style="color: #d1441e">Problem Statement</p>
+				<br>
+				<p class="concept-text">Vehicle maintenance resulting from in-service failures remains a significant fleet cost driver. Lack of insight into vehicle systems status results in suboptimal planning of maintenance activities.</p>
+				<br><br>
+				<p class="concept-text" style="color: #d1441e">Solution</p>
+				<br>
+				<p class="concept-text">The ROOT project will provide a means to perform historical and real-time reporting of vehicle systems conditions across the fleet. This will give Vehicle Maintenance rapid insights into vehicle health and allow them and dispatch to make proactive decisions.  The use of Big Data will provide insights into vehicle health correlations that otherwise would go unnoticed.</p>
+				<br><br>
+				<p class="concept-text" style="color: #d1441e">Alternatives</p>
+				<br>
+				<p>&bull;&nbsp;Do nothing</p>
+				<p>&bull;&nbsp;One-off procurement</p>
+				<p>&bull;&nbsp;Proprietary procurement with Siemens</p>
+				<p>&bull;&nbsp;ROOT project</p>
+
+			</div>
+			<div class="half-chart"><img class="diagram" src="img/maintenance-diagram.png"></div>
+		</div>
+		<p class="top"><a href="#top" class="nav_link">Top</a></p>
+	</div>	
+	
+	<div class="section headerbar" id="performance">
+		<h2 class="strata">On-Time Performance</h2>
+	</div>	
+	
+	<div class="section">
+		<div class="chart-container">
+			<div class="half-chart">
+				<p class="concept-text" style="color: #d1441e">Problem Statement</p>
+				<br>
+				<p class="concept-text">Unanticipated vehicle system failures have proven to be a major contributor to schedule delays, with rare but significant impacts on network-wide performance. The nature of TriMet’s LRT network (as illustrated in the next two slides) has created choke points that can cause systemic problems when outages happen in these locations.</p>
+				<br><br>
+				<p class="concept-text" style="color: #d1441e">Solution</p>
+				<br>
+				<p class="concept-text">The ROOT project offers the agency a means to communicate with operators and obtain better maintenance intelligence about real-time conditions to help respond more rapidly and restore service more immediately when outages happen.</p>
+				<br><br>
+				<p class="concept-text" style="color: #d1441e">Alternatives</p>
+				<br>
+				<p>&bull;&nbsp;Do nothing</p>
+				<p>&bull;&nbsp;CAD/AVL Expansion to LRT Fleet</p>
+				<p>&bull;&nbsp;Proprietary procurement with Siemens</p>
+				<p>&bull;&nbsp;ROOT project</p>
+
+			</div>
+			<div class="half-chart"><img class="diagram" src="img/performance-diagram.png"></div>
+		</div>
+		<p class="top"><a href="#top" class="nav_link">Top</a></p>
+	</div>	
+
+	<div class="section headerbar" id="customer">
+		<h2 class="strata">Customer Information</h2>
+	</div>	
+	
+	<div class="section">
+		<div class="chart-container">
+			<div class="half-chart">
+				<p class="concept-text" style="color: #d1441e">Problem Statement</p>
+				<br>
+				<p class="concept-text">Transit Tracker Real-time passenger information (RTPI) is highly accurate for the bus system running CAD/AVL.  LRT feeds Transit Tracker from track contacts from rail control system and is far less accurate.</p>
+				<br><br>
+				<p class="concept-text" style="color: #d1441e">Solution</p>
+				<br>
+				<p class="concept-text">The ROOT project provides a GPS on the rail car with a cellular high-speed data connection. This architecture enables a highly accurate link for Transit Tracker to provide real-time customer information.</p>
+				<br><br>
+				<p class="concept-text" style="color: #d1441e">Alternatives</p>
+				<br>
+				<p>&bull;&nbsp;Do nothing</p>
+				<p>&bull;&nbsp;CAD/AVL Expansion to LRT Fleet</p>
+				<p>&bull;&nbsp;One-off procurement</p>
+				<p>&bull;&nbsp;ROOT project</p>
+			</div>
+			<div class="half-chart"><img class="diagram" src="img/customer-diagram.jpg"></div>
+		</div>
+		<p class="top"><a href="#top" class="nav_link">Top</a></p>
+	</div>	
+	
+	<div class="section headerbar" id="transit">
+		<h2 class="strata">Transit Signal Priority</h2>
+	</div>	
+	
+	<div class="section">
+		<div class="chart-container">
+			<div class="half-chart">
+				<p class="concept-text" style="color: #d1441e">Problem Statement</p>
+				<br>
+				<p class="concept-text">Current LRT Transit Signal Priority is largely based on trains passing trackside contact points. This provides little advanced warning to the signal and no additional data to the signal and may not be triggered if operators stay behind the trigger location.</p>
+				<br><br>
+				<p class="concept-text" style="color: #d1441e">Description</p>
+				<br>
+				<p class="concept-text">ROOT Concept Architecture supports integration of the LRT into a Connected Vehicle environment.  This will allow upstream communications with signals, and the possibility of sharing additional data, like schedule and passenger load.</p>
+				<br><br>
+				<p class="concept-text" style="color: #d1441e">Alternatives</p>
+				<br>
+				<p>&bull;&nbsp;Do nothing</p>
+				<p>&bull;&nbsp;One-off procurement</p>
+				<p>&bull;&nbsp;ROOT project</p>
+			</div>
+			<div class="half-chart"><img class="diagram" src="img/transit-diagram.png"></div>
+		</div>
+		<p class="top"><a href="#top" class="nav_link">Top</a></p>
+	</div>	
+	
+	<div class="section headerbar" id="infotainment">
+		<h2 class="strata">Infotainment</h2>
+	</div>	
+	
+	<div class="section">
+		<div class="chart-container">
+			<div class="half-chart">
+				<p class="concept-text" style="color: #d1441e">Problem Statement</p>
+				<br>
+				<p class="concept-text">Growing expectation among riders for Internet connectivity. Lack of on-board WiFi may erode rider satisfaction and deter future growth.  There is no existing platform to support other Infotainment offerings.</p>
+				<br><br>
+				<p class="concept-text" style="color: #d1441e">Description</p>
+				<br>
+				<p class="concept-text">The ROOT project offers TriMet a straightforward means to provide consistent Internet access to riders, as well as, infrastructure to support future infotainment investment.</p>
+				<br><br>
+				<p class="concept-text" style="color: #d1441e">Alternatives</p>
+				<br>
+				<p>&bull;&nbsp;Do nothing</p>
+				<p>&bull;&nbsp;One-off procurement</p>
+				<p>&bull;&nbsp;ROOT project</p>
+			</div>
+			<div class="half-chart"><img class="diagram" src="img/infotainment-diagram.jpg"></div>
+		</div>
+		<p class="top"><a href="#top" class="nav_link">Top</a></p>
+	</div>	
+	
+	<div class="section">
+		<div class="footer">
+			<div class="footer-left">
+				<div style="padding: 30px 30px 5px 30px;">
+					<a href="/">
+						<i class="icon icon-slogan icon-trimet-logo-slogan"></i>
+					</a>
+				</div>
+				
+				<div class="footer-bottom">
+					&copy; 2017 TriMet
+					 &bull;
+					<a href="http://trimet.org/legal/index.htm">Terms of Use</a>
+					 &bull;
+					<a href="http://trimet.org/legal/privacy.htm">Privacy Policy</a>
+					 &bull;
+					<a href="http://trimet.org/about/index.htm">About Us</a>
+					 &bull;
+					<a href="http://trimet.org/contact/index.htm">Customer Service</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
