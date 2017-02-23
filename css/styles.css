@@ -235,7 +235,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
 	counter-increment: numList;
     content: counter(numList);
 	float: left;
-	width: 32px; 
+	width: 32px;
 	height: 32px;
 	text-align: center;
 	color: #fff;
