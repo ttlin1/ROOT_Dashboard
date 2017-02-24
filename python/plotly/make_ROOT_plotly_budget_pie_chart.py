@@ -25,14 +25,18 @@ trace1 = {
   "direction": "clockwise",
   "hoverinfo": "label+text+percent",
   "labels": tasks,
+  "textfont": {
+    "family": "Arial",
+    "size": 16
+  },
   "marker": {
-    "colors": ["#42A6A6", "#69C7C7", "#7893D1"],
+    "colors": ["#0D4C6A", "#327291", "#15954D"]
   },
   "showlegend": False,
   "sort": False,
   "text": money_text,
   "textinfo": "label+percent",
-  "textposition": "auto",  # "inside" | "outside" | "auto" | "none"
+  "textposition": "outside",  # "inside" | "outside" | "auto" | "none"
   "type": "pie",
   "values": df['USD']
 }

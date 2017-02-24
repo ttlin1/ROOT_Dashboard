@@ -180,6 +180,10 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
 	text-decoration: none;
 }
 
+ul.anchor li a.different-page {
+	background-color: #fff;
+}
+
 .section ul.anchor li a:hover {
 	background-color: #ddd;
 }

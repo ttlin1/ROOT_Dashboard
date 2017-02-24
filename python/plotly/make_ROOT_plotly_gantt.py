@@ -44,17 +44,17 @@ margin_dict = {
       "r": 80,
       "b": 80,
       "pad": 5,
-      "l": 320,
+      "l": 400,
       "t": 0
     }
 
 fig['layout']['margin'] = margin_dict
-# fig['layout']['font'] = dict(family='Hind', size=14)
-
+fig['layout']['font'] = dict(family='Arial', size=16)
 fig['data'][-1].items()[0][1]["colorbar"] = {"title": "Percent Complete"}
 
 # I prefer fixed axes - not the default
 fig['layout']['xaxis']['fixedrange'] = True
+fig['layout']['xaxis']['tickfont'] = dict(size=12)
 fig['layout']['yaxis']['fixedrange'] = True
 
 # Removing the range selector buttons - not that helpful
